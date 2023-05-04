@@ -26,20 +26,20 @@ def upload():
     np_data = np.frombuffer(decoded_data, np.uint8)
     image1 = cv2.imdecode(np_data, cv2.IMREAD_COLOR)
 
-    # img1=cv2.imread(data_url,cv2.IMREAD_COLOR)
-    # # Decode the data URL and save the image to a file
-    # with open('image.jpg', 'wb') as f:
-    #     f.write(base64.b64decode(data_url.split(',')[1]))
     f = np.fft.fft2(image1)
     fshift = np.fft.fftshift(f)
     magnitude_spectrum = 20*np.log(np.abs(fshift))
 
 
     phase = np.angle(fshift)
+    realpart=np.real(fshift)
+    imgpart=np.imag(fshift)
     cv2.imshow('hmm', image1)
 
     cv2.imshow('Magnitude', magnitude_spectrum)
     cv2.imshow('Phase', phase)
+    cv2.imshow('real',realpart)
+    cv2.imshow('imaginary',imgpart)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
