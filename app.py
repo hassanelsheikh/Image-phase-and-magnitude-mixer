@@ -10,28 +10,38 @@ app = Flask(__name__)
 def image_mixer():
     return render_template('index.html')
 
-@app.route('/send_image1', methods=['POST'])
-def get_signal():
-    global image1
-    array= request.get_json()
-    image1=array[0]
-    img=np.array(image1)
-    cv2.imwrite('image.png', img)
 
-    # cv2.imshow('tamam ?', np.array(image1))
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
-
-    return jsonify({'img': img.size})
 
 @app.route('/upload', methods=['POST'])
 def upload():
     # Get the data URL from the request JSON
     data_url = request.json['image_data']
+    global image1
+    image_data = data_url.split(',')[1]
 
-    # Decode the data URL and save the image to a file
-    with open('image.jpg', 'wb') as f:
-        f.write(base64.b64decode(data_url.split(',')[1]))
+# Decode the image data from base64
+    decoded_data = base64.b64decode(image_data)
+ 
+# Convert the decoded data to a NumPy array
+    np_data = np.frombuffer(decoded_data, np.uint8)
+    image1 = cv2.imdecode(np_data, cv2.IMREAD_COLOR)
+
+    # img1=cv2.imread(data_url,cv2.IMREAD_COLOR)
+    # # Decode the data URL and save the image to a file
+    # with open('image.jpg', 'wb') as f:
+    #     f.write(base64.b64decode(data_url.split(',')[1]))
+    f = np.fft.fft2(image1)
+    fshift = np.fft.fftshift(f)
+    magnitude_spectrum = 20*np.log(np.abs(fshift))
+
+
+    phase = np.angle(fshift)
+    cv2.imshow('hmm', image1)
+
+    cv2.imshow('Magnitude', magnitude_spectrum)
+    cv2.imshow('Phase', phase)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
     return 'Image saved!'
 
