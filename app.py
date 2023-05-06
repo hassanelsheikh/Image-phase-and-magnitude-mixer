@@ -111,6 +111,28 @@ def image2():
     filename=Image.generate_image("image2.png",image2)
     return send_file(filename, mimetype='image/png')    
 
+@app.route('/real2')
+def real1():
+    filename=Image.generate_component("component2.png",image2,2)
+    return send_file(filename, mimetype='image/png')
+
+@app.route('/imag2')
+def imaginary1():
+    filename=Image.generate_component("component2.png",image2,3)
+    return send_file(filename, mimetype='image/png')
+    
+@app.route('/phase2')
+def phase1():
+    filename=Image.generate_component("component2.png",image2,1)
+    return send_file(filename, mimetype='image/png')    
+
+@app.route('/magnitude2')
+def mag2():
+    filename=Image.generate_component("component2.png",image2,0)
+    return send_file(filename, mimetype='image/png')
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
     

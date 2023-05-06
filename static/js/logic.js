@@ -1,6 +1,6 @@
 
 
-var img1 = document.getElementById('img1');
+const img1 = document.getElementById('img1');
 var img2 = document.getElementById('img2');
 
 var div1 = document.getElementById('originalimg1');
@@ -71,10 +71,34 @@ img2.addEventListener('change', function(event) {
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify({image_data: event.target.result}));
 
-    div1.setAttribute("src",'/image1?' +  new Date().getTime());
+    div3.setAttribute("src",'/image2?' +  new Date().getTime());
 
 
   };
   reader.readAsDataURL(file);
 
 });
+
+function showcomponent2() {
+  var dropdown2 = document.getElementById("component2");
+  var selectedOption = dropdown2.options[dropdown2.selectedIndex].value;
+  if (selectedOption === "imag2") {
+    div4.setAttribute('src', '');
+    div4.setAttribute("src",'/imag2?' +  new Date().getTime());
+
+  } else if (selectedOption === "real2") {
+    div4.setAttribute('src', '');
+    div4.setAttribute("src",'/real2?' +  new Date().getTime());
+
+  } else if (selectedOption === "phase2") {
+    div4.setAttribute('src', '');
+    div4.setAttribute("src",'/phase2?' +  new Date().getTime());
+
+  } else if (selectedOption ==="magnitude2"){
+    div4.setAttribute('src', '');
+    div4.setAttribute("src",'/magnitude2?' +  new Date().getTime());
+
+  }
+}
+
+
