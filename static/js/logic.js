@@ -9,6 +9,29 @@ var div2 = document.getElementById('modified1');
 var div3 = document.getElementById('originalimg2');
 var div4 = document.getElementById('modified2');
 
+var slider1 = document.getElementById("ratio1");
+var SROutput = document.getElementById("percent1");
+
+SROutput.innerHTML = slider1.value;
+SROutput.innerHTML = slider1.value + " %";
+///showing sampling rate
+slider1.oninput = () => {
+    SROutput.innerHTML = slider1.value + " %";
+  };
+  var slider2 = document.getElementById("ratio2");
+  var SROutput2 = document.getElementById("percent2");
+  
+  SROutput2.innerHTML = slider2.value;
+  SROutput2.innerHTML = slider2.value + " %";
+  ///showing sampling rate
+  slider2.oninput = () => {
+      SROutput2.innerHTML = slider2.value + " %";
+    };
+
+
+  
+
+
 img1.addEventListener('change', function(event) {
   // Get the selected file
   div1.setAttribute('src', '');
