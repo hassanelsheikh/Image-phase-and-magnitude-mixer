@@ -79,8 +79,9 @@ class processimage:
 app = Flask(__name__)
 @app.route('/')
 def image_mixer():
-    global Image
+    global Image, Image2
     Image=processimage()
+    Image2=processimage()
 
     return render_template('index.html')
 
@@ -127,32 +128,32 @@ def mag1():
 def upload2():
     data_url = request.json['image_data']
     global image2
-    image2 = cv2.imdecode(Image.decodefromjs(data_url), cv2.IMREAD_GRAYSCALE)
+    image2 = cv2.imdecode(Image2.decodefromjs(data_url), cv2.IMREAD_GRAYSCALE)
     return 'Image saved!'
     
 @app.route('/image2')
 def image2():
-    filename=Image.generate_image("image2.png",image2)
+    filename=Image2.generate_image("image2.png",image2)
     return send_file(filename, mimetype='image/png')    
 
 @app.route('/real2')
 def real1():
-    filename=Image.generate_component("component2.jpeg",image2,2)
+    filename=Image2.generate_component("component2.jpeg",image2,2)
     return send_file(filename, mimetype='image/jpeg')
 
 @app.route('/imag2')
 def imaginary1():
-    filename=Image.generate_component("component2.png",image2,3)
+    filename=Image2.generate_component("component2.png",image2,3)
     return send_file(filename, mimetype='image/png')
     
 @app.route('/phase2')
 def phase1():
-    filename=Image.generate_component("component2.png",image2,1)
+    filename=Image2.generate_component("component2.png",image2,1)
     return send_file(filename, mimetype='image/png')    
 
 @app.route('/magnitude2')
 def mag2():
-    filename=Image.generate_component("component2.png",image2,0)
+    filename=Image2.generate_component("component2.png",image2,0)
     return send_file(filename, mimetype='image/png')
 
 @app.route('/mixer', methods=['POST'])
@@ -163,6 +164,14 @@ def mix_signals():
     ratio_2 = request.json['slider2_val']
     img1 = request.json['Im1']
     img2 = request.json['Im2']
+
+    if img1 == 0:
+        modified_comp1 = Image.get_components()[index1]*(ratio_1/100)
+        print(modified_comp1)
+    else:
+        modified_comp1 = Image.get_components()[index1]*(ratio_1/100)
+
+        
 
     print(index1)
     return 'Indices updated successfully!'
