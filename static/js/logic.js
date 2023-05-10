@@ -46,15 +46,20 @@ img1.addEventListener('change', function (event) {
   // Read the file as a data URL
   var reader = new FileReader();
   reader.onload = function (event) {
+
+    div1.src = event.target.result;
     // Send the data URL to the Flask server using an AJAX request
     var xhr = new XMLHttpRequest();
     xhr.open('POST', '/upload', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify({ image_data: event.target.result }));
 
-    div1.setAttribute("src", '/image1?' + new Date().getTime());
+    // div1.setAttribute("src", '/image1?' + new Date().getTime());
+
+    
 
 
+    var uploaded_image = reader.result;
   };
   reader.readAsDataURL(file);
 

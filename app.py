@@ -11,11 +11,21 @@ class processimage:
         fshift = np.fft.fftshift(f)
         magnitude_spectrum = 20*np.log(np.abs(fshift))
         phase = np.angle(fshift)
+
+        phase = np.angle(fshift)
+        
+        # Normalize phase values to [0, 1]
+        phase_norm = (phase + np.pi) / (2 * np.pi)
+        
+        # Scale phase values to [0, 255]
+        phase_scaled = (phase_norm * 255).astype(np.uint8)
+
+
         realpart=np.real(fshift)
         imgpart=np.imag(fshift)
         components=[]
         components.append(magnitude_spectrum)
-        components.append(phase)
+        components.append(phase_scaled)
         components.append(realpart)
         components.append(imgpart)
         return components
@@ -37,14 +47,24 @@ class processimage:
         print(type(matrix1))
         cv2.imwrite(filen,matrix1)
         filename=filen
+        print('AAAAAAAAAh')
         return filename
     ###################################################################################################################################################################################    
     ################################################################################################## 
-    def generate_component(self,filen,matrix,indexofcomponent):
-        self.removefiles(filen)
-        wantedcomponent=Image.processimage(matrix)[indexofcomponent]
-        cv2.imwrite(filen,wantedcomponent)
-        filename=filen
+    def generate_component(self, filename, matrix, index_of_component):
+        # remove any existing file with the same name
+        try:
+            os.remove(filename)
+        except FileNotFoundError:
+            pass
+        
+        # process the matrix to extract the desired component
+        wanted_component = Image.processimage(matrix)[index_of_component]
+
+        # save the component as a JPEG file
+        cv2.imwrite(filename, wanted_component)
+
+        # return the filename of the saved file
         return filename
 
     def removefiles(self,name):
@@ -69,18 +89,21 @@ def upload():
     data_url1 = request.json['image_data']
     global image1
     image1 = cv2.imdecode(Image.decodefromjs(data_url1), cv2.IMREAD_COLOR)
+
     return 'Image saved!'
 
-@app.route('/image1')
-def image1():
-    filename=Image.generate_image("image1.png",image1)
-    return send_file(filename, mimetype='image/png')
+# @app.route('/image1')
+# def image1():
+#     filename=Image.generate_image("image1.png",image1)
+#     return send_file(filename, mimetype='image/png')
 
     
 @app.route('/real1')
 def real():
-    filename=Image.generate_component("component1.png",image1,2)
-    return send_file(filename, mimetype='image/png')
+    global image1
+    filename = Image.generate_component("component1.jpeg", image1, 2)
+    print(filename)
+    return send_file(filename, mimetype='image/jpeg')
 
 @app.route('/imag1')
 def imaginary():
@@ -95,7 +118,7 @@ def phase():
 @app.route('/magnitude1')
 def mag1():
     filename=Image.generate_component("component1.png",image1,0)
-    return send_file(filename, mimetype='image/png') 
+    return send_file(filename, mimetype='image/jpeg') 
 
 ################################################################################################################
 ################################################################################################################
