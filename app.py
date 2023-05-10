@@ -155,7 +155,7 @@ def mag2():
     filename=Image.generate_component("component2.png",image2,0)
     return send_file(filename, mimetype='image/png')
 
-@app.route('/mixer')
+@app.route('/mixer', methods=['POST'])
 def mix_signals():
     index1 = request.json['index1']
     index2 = request.json['index2']
