@@ -126,7 +126,7 @@ def mag1():
 def upload2():
     data_url = request.json['image_data']
     global image2
-    image2 = cv2.imdecode(Image.decodefromjs(data_url), cv2.IMREAD_COLOR)
+    image2 = cv2.imdecode(Image.decodefromjs(data_url), cv2.IMREAD_GRAYSCALE)
     return 'Image saved!'
     
 @app.route('/image2')
