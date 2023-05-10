@@ -140,24 +140,47 @@ var dropdownimage1 = document.getElementById("imagepart1");
 var dropdownimage2 = document.getElementById("imagepart2");
 
 function on_parameters_change() {
-  var outdiv = dropdownddiv.options[dropdown1.selectedIndex].value;
+  var outdiv = dropdownddiv.selectedIndex;
 
   let mixingr1 = slider1.value;
   let mixingr2 = slider2.value;
 
-  var component1 = dropdown1.options[dropdown1.selectedIndex].value;
+  var component1 = dropdown1.selectedIndex;
 
-  var component2 = dropdown2.options[dropdown2.selectedIndex].value;
+  var component2 = dropdown2.selectedIndex;
 
-  var part1 = dropdownimage1.options[dropdown1.selectedIndex].value;
+  var part1 = dropdownimage1.selectedIndex;
 
-  var part2 = dropdownimage2.options[dropdown1.selectedIndex].value;
+  var part2 = dropdownimage2.selectedIndex;
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', '/mixer');
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onload = function() {
+    if (xhr.status === 200) {-
+      console.log('Indices updated successfully!');
+    } else {
+      console.log('Error updating indices.');
+    }
+  };
+  var data = {
+    slider1_val:mixingr1,
+    slider2_val:mixingr2,
+    index1: component1,
+    index2: component2,
+    Im1: part1,
+    Im2: part2
+  };
+  xhr.send(JSON.stringify(data));
 
 
-
-
-  if (outdiv === "one") {
+  if (outdiv === 0) {
+    console.log('dakhal')
     outdiv1.setAttribute('src', '');
+
+
+
+
     outdiv1.setAttribute("src", '/real2?' + new Date().getTime());
   } else if (outdiv === "two") {
     outdiv2.setAttribute('src', '');
@@ -173,22 +196,22 @@ slider2.addEventListener("mouseup", async function () {
   on_parameters_change();
 })
 
-dropdownddiv.addEventListener('click', function () {
+// dropdownddiv.addEventListener('click', function () {
+//   on_parameters_change();
+// });
+
+dropdown1.addEventListener('change', function () {
   on_parameters_change();
 });
 
-dropdown1.addEventListener('click', function () {
+dropdown2.addEventListener('change', function () {
   on_parameters_change();
 });
 
-dropdown2.addEventListener('click', function () {
+dropdownimage1.addEventListener('change', function () {
   on_parameters_change();
 });
 
-dropdownimage1.addEventListener('click', function () {
-  on_parameters_change();
-});
-
-dropdownimage2.addEventListener('click', function () {
+dropdownimage2.addEventListener('change', function () {
   on_parameters_change();
 });

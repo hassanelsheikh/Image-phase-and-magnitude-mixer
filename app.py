@@ -5,6 +5,11 @@ import base64
 import os
 
 class processimage:
+    def __init__(self):
+        self.components = []
+
+    def get_components(self):
+        return self.components
     
     def processimage(self,matrix):
         f = np.fft.fft2(matrix)
@@ -23,12 +28,8 @@ class processimage:
 
         realpart=np.real(fshift)
         imgpart=np.imag(fshift)
-        components=[]
-        components.append(magnitude_spectrum)
-        components.append(phase_scaled)
-        components.append(realpart)
-        components.append(imgpart)
-        return components
+        self.components = [magnitude_spectrum, phase_scaled, realpart, imgpart]
+        return self.components
     ################################################################################################################################
     ################################################################################################################################
     def decodefromjs(self,data_url):
@@ -136,8 +137,8 @@ def image2():
 
 @app.route('/real2')
 def real1():
-    filename=Image.generate_component("component2.png",image2,2)
-    return send_file(filename, mimetype='image/png')
+    filename=Image.generate_component("component2.jpeg",image2,2)
+    return send_file(filename, mimetype='image/jpeg')
 
 @app.route('/imag2')
 def imaginary1():
@@ -153,6 +154,18 @@ def phase1():
 def mag2():
     filename=Image.generate_component("component2.png",image2,0)
     return send_file(filename, mimetype='image/png')
+
+@app.route('/mixer')
+def mix_signals():
+    index1 = request.json['index1']
+    index2 = request.json['index2']
+    ratio_1 = request.json['slider1_val']
+    ratio_2 = request.json['slider2_val']
+    img1 = request.json['Im1']
+    img2 = request.json['Im2']
+
+    print(index1)
+    return 'Indices updated successfully!'
 
 
 
