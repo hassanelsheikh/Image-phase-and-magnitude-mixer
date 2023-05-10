@@ -14,8 +14,9 @@ var SROutput = document.getElementById("percent1");
 
 var outdiv1 = document.getElementById("out1");
 var outdiv2 = document.getElementById("out2");
-
-
+var size_img1x;
+var size_img1y;
+var x1;var y1; var x2;var y2;
 SROutput.innerHTML = slider1.value;
 SROutput.innerHTML = slider1.value + " %";
 ///showing sampling rate
@@ -40,8 +41,31 @@ img1.addEventListener('change', function (event) {
   // Get the selected file
   div1.setAttribute('src', '');
   div2.setAttribute('src', '');
+  var isImageLoaded = false; // Flag to indicate if the image has finished loading
 
   var file = event.target.files[0];
+  var img = new Image();
+img.onload = function() {
+  size_img1x = img.naturalWidth;
+  size_img1y = img.naturalHeight;
+  isImageLoaded = true; // Set the flag to true when the image has finished loading
+  handleImageDimensions(size_img1x, size_img1y); 
+}
+
+img.src = URL.createObjectURL(file);
+function handleImageDimensions(width, height) {
+  // You can perform additional operations with the dimensions here
+  x1=width;
+  y1=height;
+  
+}
+
+// Check if the image has finished loading and the dimensions are available
+if (isImageLoaded) {
+  handleImageDimensions(size_img1x, size_img1y);
+} else {
+  console.log('Image is still loading...');
+}
 
   // Read the file as a data URL
   var reader = new FileReader();
@@ -62,6 +86,9 @@ img1.addEventListener('change', function (event) {
     var uploaded_image = reader.result;
   };
   reader.readAsDataURL(file);
+  
+
+
 
 });
 
@@ -89,15 +116,54 @@ function showcomponent() {
 
 img2.addEventListener('change', function (event) {
   // Get the selected file
+  var errorflag=false;
+
   div3.setAttribute('src', '');
   div4.setAttribute('src', '');
+  var isImageLoaded = false; // Flag to indicate if the image has finished loading
 
   var file = event.target.files[0];
+  var img = new Image();
+  img.onload = function() {
+    size_img1x = img.naturalWidth;
+    size_img1y = img.naturalHeight;
+    isImageLoaded = true; // Set the flag to true when the image has finished loading
+    handleImageDimensions(size_img1x, size_img1y); 
+  }
+  
+  img.src = URL.createObjectURL(file);
+  function handleImageDimensions(width, height) {
+    // You can perform additional operations with the dimensions here
+    x2=width;
+    y2=height;
+    
+  }
+  
+  // Check if the image has finished loading and the dimensions are available
+  if (isImageLoaded) {
+    handleImageDimensions(size_img1x, size_img1y);
+    
 
+    
+  } else {
+    console.log('Image is still loading...');
+  }
   // Read the file as a data URL
+  setTimeout(function() {
+    // Code to execute after the delay
+    if (x1 !=x2  || y1 !=y2){
+       errorflag=true;  div3.setAttribute('src', '');
+    }
+  }, 1000); // Delay of 2000 milliseconds (2 seconds)
   var reader = new FileReader();
   reader.onload = function (event) {
     // Send the data URL to the Flask server using an AJAX request
+    if(errorflag==true){
+      div3.setAttribute('src', '');
+      return;
+    }
+
+    
     div3.src = event.target.result;
     var xhr = new XMLHttpRequest();
     xhr.open('POST', '/upload2', true);
@@ -105,7 +171,6 @@ img2.addEventListener('change', function (event) {
     xhr.send(JSON.stringify({ image_data: event.target.result }));
 
     //div3.setAttribute("src", '/image2?' + new Date().getTime());
-
 
   };
   reader.readAsDataURL(file);
@@ -210,3 +275,31 @@ dropdownimage1.addEventListener('change', function () {
 dropdownimage2.addEventListener('change', function () {
   on_parameters_change();
 });
+
+
+// function getImageSizes(file1) {
+//   // Create image elements for the two uploaded files
+//   var img1 = new Image();
+
+//   // Set the image source URLs to the uploaded files
+//   img1.src = URL.createObjectURL(file1);
+  
+//   // Wait for the images to load before getting their sizes
+//   img1.onload = function() {
+//     console.log("The size of image 1 is " + img1.naturalWidth + " x " + img1.naturalHeight);
+//  size_img1x=img1.naturalWidth;size_img1y=img1.naturalHeight;
+//   };
+  
+// }
+
+
+
+function getImageSizes(file1) {
+  var img1 = new Image();
+  img1.src = URL.createObjectURL(file1);
+  img1.onload = function() {
+    width = img1.naturalWidth;
+    height = img1.naturalHeight;
+    console.log("The size of image 1 is " + width + " x " + height);
+  };
+}

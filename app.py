@@ -93,6 +93,7 @@ def upload():
     image1 = cv2.imdecode(Image.decodefromjs(data_url1), cv2.IMREAD_GRAYSCALE)
     global c1 
     c1=Image.processimage(image1)
+    print(np.size(image1))
 
     return 'Image saved!'
 
@@ -131,6 +132,7 @@ def upload2():
     image2 = cv2.imdecode(Image2.decodefromjs(data_url), cv2.IMREAD_GRAYSCALE)
     global c2
     c2=Image2.processimage(image2)
+    print(np.size(image2))
     return 'Image saved!'
     
 @app.route('/image2')
@@ -177,6 +179,8 @@ def mix_signals():
         modified_comp2 = Image.get_components()[index2]*(ratio_2/100)
     else:
         modified_comp2 = Image2.get_components()[index2]*(ratio_2/100)
+        
+    
         
 
     return 'Indices updated successfully!'
