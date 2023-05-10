@@ -175,12 +175,7 @@ function on_parameters_change() {
 
 
   if (outdiv === 0) {
-    console.log('dakhal')
     outdiv1.setAttribute('src', '');
-
-
-
-
     outdiv1.setAttribute("src", '/real2?' + new Date().getTime());
   } else if (outdiv === "two") {
     outdiv2.setAttribute('src', '');

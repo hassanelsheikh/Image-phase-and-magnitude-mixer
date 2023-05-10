@@ -79,10 +79,10 @@ class processimage:
 app = Flask(__name__)
 @app.route('/')
 def image_mixer():
-    global Image, Image2
+    global Image
+    global Image2
     Image=processimage()
     Image2=processimage()
-
     return render_template('index.html')
 
 
@@ -91,6 +91,8 @@ def upload():
     data_url1 = request.json['image_data']
     global image1
     image1 = cv2.imdecode(Image.decodefromjs(data_url1), cv2.IMREAD_GRAYSCALE)
+    global c1 
+    c1=Image.processimage(image1)
 
     return 'Image saved!'
 
@@ -102,9 +104,7 @@ def upload():
     
 @app.route('/real1')
 def real():
-    global image1
     filename = Image.generate_component("component1.jpeg", image1, 2)
-    print(filename)
     return send_file(filename, mimetype='image/jpeg')
 
 @app.route('/imag1')
@@ -129,6 +129,8 @@ def upload2():
     data_url = request.json['image_data']
     global image2
     image2 = cv2.imdecode(Image2.decodefromjs(data_url), cv2.IMREAD_GRAYSCALE)
+    global c2
+    c2=Image2.processimage(image2)
     return 'Image saved!'
     
 @app.route('/image2')
@@ -160,20 +162,23 @@ def mag2():
 def mix_signals():
     index1 = request.json['index1']
     index2 = request.json['index2']
-    ratio_1 = request.json['slider1_val']
-    ratio_2 = request.json['slider2_val']
-    img1 = request.json['Im1']
-    img2 = request.json['Im2']
-
+    ratio_1 = int(request.json['slider1_val'])
+    ratio_2 = int(request.json['slider2_val'])
+    img1 = int(request.json['Im1'])
+    img2 = int(request.json['Im2'])
+    
     if img1 == 0:
         modified_comp1 = Image.get_components()[index1]*(ratio_1/100)
-        print(modified_comp1)
     else:
-        modified_comp1 = Image.get_components()[index1]*(ratio_1/100)
-
+        modified_comp1 = Image2.get_components()[index1]*(ratio_1/100)
+    
+    
+    if img2 == 0:
+        modified_comp2 = Image.get_components()[index2]*(ratio_2/100)
+    else:
+        modified_comp2 = Image2.get_components()[index2]*(ratio_2/100)
         
 
-    print(index1)
     return 'Indices updated successfully!'
 
 
