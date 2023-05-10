@@ -88,7 +88,7 @@ def image_mixer():
 def upload():
     data_url1 = request.json['image_data']
     global image1
-    image1 = cv2.imdecode(Image.decodefromjs(data_url1), cv2.IMREAD_COLOR)
+    image1 = cv2.imdecode(Image.decodefromjs(data_url1), cv2.IMREAD_GRAYSCALE)
 
     return 'Image saved!'
 
