@@ -256,9 +256,6 @@ slider2.addEventListener("mouseup", async function () {
   on_parameters_change();
 })
 
-// dropdownddiv.addEventListener('click', function () {
-//   on_parameters_change();
-// });
 
 dropdown1.addEventListener('change', function () {
   on_parameters_change();
@@ -277,29 +274,4 @@ dropdownimage2.addEventListener('change', function () {
 });
 
 
-// function getImageSizes(file1) {
-//   // Create image elements for the two uploaded files
-//   var img1 = new Image();
 
-//   // Set the image source URLs to the uploaded files
-//   img1.src = URL.createObjectURL(file1);
-  
-//   // Wait for the images to load before getting their sizes
-//   img1.onload = function() {
-//     console.log("The size of image 1 is " + img1.naturalWidth + " x " + img1.naturalHeight);
-//  size_img1x=img1.naturalWidth;size_img1y=img1.naturalHeight;
-//   };
-  
-// }
-
-
-
-function getImageSizes(file1) {
-  var img1 = new Image();
-  img1.src = URL.createObjectURL(file1);
-  img1.onload = function() {
-    width = img1.naturalWidth;
-    height = img1.naturalHeight;
-    console.log("The size of image 1 is " + width + " x " + height);
-  };
-}
