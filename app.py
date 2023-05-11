@@ -45,10 +45,8 @@ class processimage:
     ################################################################################################################################    
     def generate_image(self,filen,matrix1):
         self.removefiles(filen)
-        print(type(matrix1))
         cv2.imwrite(filen,matrix1)
         filename=filen
-        print('AAAAAAAAAh')
         return filename
     ###################################################################################################################################################################################    
     ################################################################################################## 
@@ -93,7 +91,6 @@ def upload():
     image1 = cv2.imdecode(Image.decodefromjs(data_url1), cv2.IMREAD_GRAYSCALE)
     global c1 
     c1=Image.processimage(image1)
-    print(np.size(image1))
 
     return 'Image saved!'
 
@@ -132,7 +129,6 @@ def upload2():
     image2 = cv2.imdecode(Image2.decodefromjs(data_url), cv2.IMREAD_GRAYSCALE)
     global c2
     c2=Image2.processimage(image2)
-    print(np.size(image2))
     return 'Image saved!'
     
 @app.route('/image2')
@@ -168,7 +164,11 @@ def mix_signals():
     ratio_2 = int(request.json['slider2_val'])
     img1 = int(request.json['Im1'])
     img2 = int(request.json['Im2'])
+    print(ratio_1)
+    print(ratio_2)
+    global modified_comp1
     
+    global modified_comp2
     if img1 == 0:
         modified_comp1 = Image.get_components()[index1]*(ratio_1/100)
     else:
@@ -185,7 +185,20 @@ def mix_signals():
 
     return 'Indices updated successfully!'
 
+@app.route('/final_image')
+def final_im():
+    OutputImage = np.multiply(
+        modified_comp1, np.exp(1j * modified_comp2))
+    #FinalImage = np.abs(np.fft.ifft2(np.fft.ifftshift(OutputImage)))
+    FinalImage=np.real(np.fft.ifft2(OutputImage))
+    # cv2.imshow('Final Image', FinalImage)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+    filename=Image.generate_image("hi.png",FinalImage)
+    
+    return send_file(filename, mimetype='image/png')
 
+    
 
 if __name__ == '__main__':
     app.run(debug=True)

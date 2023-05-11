@@ -241,10 +241,10 @@ function on_parameters_change() {
 
   if (outdiv === 0) {
     outdiv1.setAttribute('src', '');
-    outdiv1.setAttribute("src", '/real2?' + new Date().getTime());
+    outdiv1.setAttribute("src", '/final_image?' + new Date().getTime());
   } else if (outdiv === "two") {
     outdiv2.setAttribute('src', '');
-    outdiv2.setAttribute("src", '/real2?' + new Date().getTime());
+    outdiv2.setAttribute("src", '/final_image?' + new Date().getTime());
   }
 }
 

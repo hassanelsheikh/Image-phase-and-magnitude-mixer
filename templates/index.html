@@ -25,7 +25,7 @@
             <option value="real">real part</option>
             <option value="phase">Phase</option>
             <option value="magnitude">Magnitude</option>
-
+            
           </select>
           <img id="originalimg1" width="400" height="400">
           <img id="modified1" width="400" height="400" >
@@ -53,12 +53,13 @@
         <option value="phase">Phase</option>
         <option value="real">real part</option>
         <option value="imag">Imaginary part</option>
-
+        <option value="uniphase">Uniform phase</option>
+        <option value="unimag">Uniform mag</option>
         
       </select>
       <div class="s1">
         <label for="ratio1" id="noiselabel">Component one Mixing ratio:</label>
-                 <input type="range" min="1" max="100" value="50" class="slider" id="ratio1">
+                 <input type="range" min="1" max="100" value="100" class="slider" id="ratio1">
                  <span id="percent1"></span>
                 </div>
     </div>
@@ -76,11 +77,12 @@
         <option value="phase">Phase</option>
         <option value="real">real part</option>
         <option value="imag">Imaginary part</option>
-
+        <option value="uniphase2">Uniform phase</option>
+        <option value="unimag2">Uniform mag</option>
       </select>
       <div class="s2">
       <label for="ratio2" id="noiselabel"> Component two Mixing ratio:</label>
-               <input type="range" min="1" max="100" value="50" class="slider" id="ratio2">
+               <input type="range" min="1" max="100" value="100" class="slider" id="ratio2">
                <span id="percent2"></span>
               </div>
     
@@ -111,7 +113,7 @@
       <option value="real2">real part</option>
       <option value="phase2">Phase</option>
       <option value="magnitude2">Magnitude</option>
-
+      
     </select>
     <img id="originalimg2" width="400" height="400">
     <img id="modified2" width="400" height="400">
