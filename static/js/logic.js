@@ -234,7 +234,9 @@ function on_parameters_change() {
     index1: component1,
     index2: component2,
     Im1: part1,
-    Im2: part2
+    Im2: part2,
+    type1: dropdown1.options[dropdown1.selectedIndex].value,
+    type2: dropdown2.options[dropdown2.selectedIndex].value
   };
   xhr.send(JSON.stringify(data));
 
