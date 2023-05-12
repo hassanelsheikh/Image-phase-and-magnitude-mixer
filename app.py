@@ -6,9 +6,9 @@ import os
 
 
 
-def mix_magnitude_phase(modified_comp1, modified_comp2,ratio1, ratio2):
-    mag = modified_comp1*(ratio1/100)
-    phase = modified_comp2*(ratio2/100)
+def mix_magnitude_phase(modified_comp1, modified_comp2,ratio1, ratio2,c1,c2):
+    mag = np.add(modified_comp1*((ratio1/100)),c2*(1-(ratio1/100)))
+    phase = np.add(modified_comp2*(ratio2/100),c1*(1-(ratio2/100)))
     OutputImage = np.multiply(mag, np.exp(1j * phase))
     FinalImage = np.real(np.fft.ifft2((OutputImage)))
     FinalImage = (FinalImage - np.min(FinalImage)) / \
@@ -219,7 +219,7 @@ def mag2():
 
 @app.route('/mixer', methods=['POST'])
 def mix_signals():
-    global type1, type2, ratio_1, ratio_2, index1, index2
+    global type1, type2, ratio_1, ratio_2, index1, index2,compliment2,compliment
 
     index1 = request.json['index1']
     index2 = request.json['index2']
@@ -234,15 +234,31 @@ def mix_signals():
     global modified_comp1, modified_comp2
     if img1 == 0:
         modified_comp1 = Image.components[index1]
+        if (index1==0): #get the phase
+            compliment=Image.components[1]
+        elif (index1==1): #get the mag
+            compliment=Image.components[0]   
 
     elif img1 == 1:
         modified_comp1 = Image2.components[index1]
+        if (index1==0): #get the phase
+            compliment=Image2.components[1]
+        elif (index1==1): #get the mag
+            compliment=Image2.components[0]
     
     
     if img2 == 0:
         modified_comp2 = Image.components[index2]
+        if (index2==0): #get the phase
+            compliment2=Image.components[1]
+        elif (index2==1): #get the mag
+            compliment2=Image.components[0]
     elif img2 == 1:
         modified_comp2 = Image2.components[index2]
+        if (index2==0): #get the phase
+            compliment2=Image2.components[1]
+        elif (index2==1): #get the mag
+            compliment2=Image2.components[0]
         
     
         
@@ -256,10 +272,10 @@ def final_im():
     
 
     if(type1 == 'magnitude' and type2 == 'phase'):  
-        return mix_magnitude_phase(modified_comp1, modified_comp2,ratio_1,ratio_2)
+        return mix_magnitude_phase(modified_comp1, modified_comp2,ratio_1,ratio_2,compliment,compliment2)
     
     elif(type1 == 'phase' and type2 == 'magnitude'):
-        return mix_magnitude_phase(modified_comp2, modified_comp1,ratio_1,ratio_2)
+        return mix_magnitude_phase(modified_comp2, modified_comp1,ratio_1,ratio_2,compliment2,compliment)
     
     elif(type1 == 'real' and type2 == 'imag'):
         return mix_real_imag(modified_comp1, modified_comp2,ratio_1/100,ratio_2/100)
