@@ -163,8 +163,8 @@ def upload():
     
 @app.route('/real1')
 def real():
-    filename = Image.generate_component("component1.jpeg", Image, 2)
-    return send_file(filename, mimetype='image/jpeg')
+    filename = Image.generate_component("component1.png", Image, 2)
+    return send_file(filename, mimetype='image/png')
 
 @app.route('/imag1')
 def imaginary():
@@ -179,7 +179,7 @@ def phase():
 @app.route('/magnitude1')
 def mag1():
     filename=Image.generate_component("component1.png",Image,0)
-    return send_file(filename, mimetype='image/jpeg') 
+    return send_file(filename, mimetype='image/png') 
 
 ################################################################################################################
 ################################################################################################################
@@ -199,8 +199,8 @@ def image2():
 
 @app.route('/real2')
 def real1():
-    filename=Image2.generate_component("component2.jpeg",Image2,2)
-    return send_file(filename, mimetype='image/jpeg')
+    filename=Image2.generate_component("component2.png",Image2,2)
+    return send_file(filename, mimetype='image/png')
 
 @app.route('/imag2')
 def imaginary1():
@@ -230,7 +230,6 @@ def mix_signals():
     type1 = request.json['type1']
     type2 = request.json['type2']
     print(index1)
-    print(print)
     global modified_comp1, modified_comp2
     if img1 == 0:
         modified_comp1 = Image.components[index1]
@@ -238,6 +237,8 @@ def mix_signals():
             compliment=Image.components[1]
         elif (index1==1): #get the mag
             compliment=Image.components[0]   
+
+                
 
     elif img1 == 1:
         modified_comp1 = Image2.components[index1]
@@ -282,7 +283,10 @@ def final_im():
     
     elif(type1 == 'imag' and type2 == 'real'):
         return mix_real_imag(modified_comp2, modified_comp1,ratio_1/100,ratio_2/100)
+    
+
         
+            
 
 ##########################################################################################################
 
