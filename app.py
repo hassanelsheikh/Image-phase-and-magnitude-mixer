@@ -6,11 +6,11 @@ import os
 
 
 
-def mix_magnitude_phase(modified_comp1, modified_comp2):
-    mag = modified_comp1
-    phase = modified_comp2
+def mix_magnitude_phase(modified_comp1, modified_comp2,ratio1, ratio2):
+    mag = modified_comp1*(ratio1/100)
+    phase = modified_comp2*(ratio2/100)
     OutputImage = np.multiply(mag, np.exp(1j * phase))
-    FinalImage = np.real(np.fft.ifft2(np.fft.ifftshift(OutputImage)))
+    FinalImage = np.real(np.fft.ifft2((OutputImage)))
     FinalImage = (FinalImage - np.min(FinalImage)) / \
         (np.max(FinalImage) - np.min(FinalImage)) * 255
     FinalImage = FinalImage.astype(np.uint8)
@@ -18,9 +18,9 @@ def mix_magnitude_phase(modified_comp1, modified_comp2):
     return send_file(filename, mimetype='image/png')
 
 
-def mix_real_imag(real, imag):
+def mix_real_imag(real, imag, ratio1, ratio2):
     # Mix magnitude and imaginary components
-    mixed_fft = np.multiply(real, np.exp(1j * np.angle(imag)))
+    mixed_fft = np.multiply(real*ratio1, np.exp(1j * np.angle(imag*ratio2)))
 
     # Perform inverse FFT to get mixed image
     mixed_image = np.real(np.fft.ifft2(mixed_fft))
@@ -54,14 +54,15 @@ class processimage:
     def processimage(self,matrix):
         f = np.fft.fft2(matrix)
         fshift =  np.fft.fftshift(f)
-        magnitude_spectrum = 20*np.log(np.abs(f))
-        # scaled_mag = ((magnitude_spectrum - np.min(magnitude_spectrum)) / \
-        # (np.max(magnitude_spectrum) - np.min(magnitude_spectrum)) * 255).astype('float')
+        magnitude_spectrum = np.abs(f)
+        scaled_mag = ((magnitude_spectrum - np.min(magnitude_spectrum)) / \
+        (np.max(magnitude_spectrum) - np.min(magnitude_spectrum)) * 255).astype('float')
         phase = np.angle(f)
 
-        
+        phase_shift = np.angle(fshift)
+
         # Normalize phase values to [0, 1]
-        phase_norm = (phase + np.pi) / (2 * np.pi)
+        phase_norm = (phase_shift + np.pi) / (2 * np.pi)
         
         # Scale phase values to [0, 255]
         phase_scaled = (phase_norm * 255).astype(np.uint8)
@@ -74,7 +75,7 @@ class processimage:
         shifted_real = np.real(fshift)
         shifted_imag = np.imag(fshift)
 
-        self.components = [magnitude_spectrum, phase, realpart, imgpart]
+        self.components = [scaled_mag, phase, realpart, imgpart]
         self.phase = phase
         self.magnitude = magnitude_spectrum
         self.scaled_phase = phase_scaled
@@ -255,16 +256,16 @@ def final_im():
     
 
     if(type1 == 'magnitude' and type2 == 'phase'):  
-        return mix_magnitude_phase(modified_comp1, modified_comp2)
+        return mix_magnitude_phase(modified_comp1, modified_comp2,ratio_1,ratio_2)
     
     elif(type1 == 'phase' and type2 == 'magnitude'):
-        return mix_magnitude_phase(modified_comp2, modified_comp1)
+        return mix_magnitude_phase(modified_comp2, modified_comp1,ratio_1,ratio_2)
     
     elif(type1 == 'real' and type2 == 'imag'):
-        return mix_real_imag(modified_comp1, modified_comp2)
+        return mix_real_imag(modified_comp1, modified_comp2,ratio_1,ratio_2)
     
     elif(type1 == 'imag' and type2 == 'real'):
-        return mix_real_imag(modified_comp2, modified_comp1)
+        return mix_real_imag(modified_comp2, modified_comp1,ratio_1,ratio_2)
         
 
 ##########################################################################################################
