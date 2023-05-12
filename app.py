@@ -34,6 +34,54 @@ def mix_real_imag(real, imag, ratio1, ratio2):
     return send_file(filename, mimetype='image/png')
 
 
+def mix_uniMag_phase(mag, phase, ratio1, ratio2,c1,c2):
+    uni_mag  = mag/mag
+    uni_Magnitude = np.add(uni_mag*((ratio1)), c2*(1-(ratio1)))
+    phase = np.add(modified_comp2*(ratio2),c1*(1-(ratio2)))
+    OutputImage = np.multiply(uni_Magnitude, np.exp(1j * phase))
+    FinalImage = np.real(np.fft.ifft2((OutputImage)))
+    FinalImage = (FinalImage - np.min(FinalImage)) / \
+        (np.max(FinalImage) - np.min(FinalImage)) * 255
+    FinalImage = FinalImage.astype(np.uint8)
+    filename = Image.generate_image("hi.png", FinalImage)
+    return send_file(filename, mimetype='image/png')
+
+def mix_mag_uniPhase(mag, phase, ratio1, ratio2, c1, c2):
+    uni_phase = np.multiply(phase, 0)
+    New_magnitude = np.add(mag*(ratio1/100), c2*(1-ratio_1/100))
+    New_phase = np.add(uni_phase*(ratio2/100), c1*(1-ratio2/100))
+    OutputImage = np.multiply(New_magnitude, np.exp(1j * New_phase))
+    FinalImage = np.real(np.fft.ifft2((OutputImage)))
+    FinalImage = (FinalImage - np.min(FinalImage)) / \
+        (np.max(FinalImage) - np.min(FinalImage)) * 255
+    FinalImage = FinalImage.astype(np.uint8)
+    filename = Image.generate_image("hi.png", FinalImage)
+    return send_file(filename, mimetype='image/png')
+
+def mix_unimag_uniphase(mag, phase, ratio1, ratio2, c1, c2):
+     uni_phase = np.multiply(phase, 0)
+     uni_mag  = mag/mag
+     uni_Magnitude = np.add(uni_mag*((ratio1)), c2*(1-(ratio1)))
+     New_phase = np.add(uni_phase*(ratio2/100), c1*(1-ratio2/100))
+     OutputImage = np.multiply(uni_Magnitude, np.exp(1j * New_phase))
+     FinalImage = np.real(np.fft.ifft2((OutputImage)))
+     FinalImage = (FinalImage - np.min(FinalImage)) / \
+        (np.max(FinalImage) - np.min(FinalImage)) * 255
+     FinalImage = FinalImage.astype(np.uint8)
+     filename = Image.generate_image("hi.png", FinalImage)
+     return send_file(filename, mimetype='image/png') 
+
+     
+
+
+
+    
+
+    
+
+
+
+
 
 
 class processimage:
@@ -75,7 +123,7 @@ class processimage:
         shifted_real = np.real(fshift)
         shifted_imag = np.imag(fshift)
 
-        self.components = [scaled_mag, phase, realpart, imgpart]
+        self.components = [scaled_mag, phase, realpart, imgpart, phase, scaled_mag]
         self.phase = phase
         self.magnitude = magnitude_spectrum
         self.scaled_phase = phase_scaled
@@ -233,32 +281,30 @@ def mix_signals():
     global modified_comp1, modified_comp2
     if img1 == 0:
         modified_comp1 = Image.components[index1]
-        if (index1==0): #get the phase
+        if (index1==0 or index1 == 5): #get the phase
             compliment=Image.components[1]
-        elif (index1==1): #get the mag
+        elif (index1==1 or index1 == 4): #get the mag
             compliment=Image.components[0]   
-
-                
 
     elif img1 == 1:
         modified_comp1 = Image2.components[index1]
-        if (index1==0): #get the phase
+        if (index1==0 or index1 == 5): #get the phase
             compliment=Image2.components[1]
-        elif (index1==1): #get the mag
+        elif (index1==1 or index1 == 4): #get the mag
             compliment=Image2.components[0]
     
     
     if img2 == 0:
         modified_comp2 = Image.components[index2]
-        if (index2==0): #get the phase
+        if (index2==0 or index2 == 5): #get the phase
             compliment2=Image.components[1]
-        elif (index2==1): #get the mag
+        elif (index2==1 or index2 == 4): #get the mag
             compliment2=Image.components[0]
     elif img2 == 1:
         modified_comp2 = Image2.components[index2]
-        if (index2==0): #get the phase
+        if (index2==0 or index2 == 5): #get the phase
             compliment2=Image2.components[1]
-        elif (index2==1): #get the mag
+        elif (index2==1 or index2 == 4): #get the mag
             compliment2=Image2.components[0]
         
     
@@ -283,6 +329,29 @@ def final_im():
     
     elif(type1 == 'imag' and type2 == 'real'):
         return mix_real_imag(modified_comp2, modified_comp1,ratio_1/100,ratio_2/100)
+    
+    elif(type1 == 'unimag' and type2 == 'phase'):
+        return mix_uniMag_phase(modified_comp1, modified_comp2, ratio_1, ratio_2, compliment, compliment2)
+    
+    elif(type1 == 'phase' and type2 == 'unimag'):
+        return mix_uniMag_phase(modified_comp2, modified_comp1, ratio_1, ratio_2, compliment2, compliment)
+    
+    elif(type1 == 'magnitude' and type2 == 'uniphase'):
+        return mix_mag_uniPhase(modified_comp1, modified_comp2, ratio_1, ratio_2, compliment, compliment2)
+    
+    elif(type1 == 'uniphase' and type2 == 'magnitude'):
+        return mix_mag_uniPhase(modified_comp2, modified_comp1, ratio_1, ratio_2, compliment2, compliment)
+    
+    elif(type1 == 'unimag' and type2 == 'uniphase'):
+        return mix_unimag_uniphase(modified_comp1, modified_comp2, ratio_1, ratio_2, compliment, compliment2)
+    
+    elif(type1 == 'uniphase' and type2 =='unimag'):
+        return mix_unimag_uniphase(modified_comp2, modified_comp1, ratio_1, ratio_2, compliment2, compliment)
+
+
+    
+    
+
     
 
         
