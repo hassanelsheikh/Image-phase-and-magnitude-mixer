@@ -20,7 +20,7 @@ def mix_magnitude_phase(modified_comp1, modified_comp2,ratio1, ratio2):
 
 def mix_real_imag(real, imag, ratio1, ratio2):
     # Mix magnitude and imaginary components
-    mixed_fft = np.multiply(real*ratio1, np.exp(1j * np.angle(imag*ratio2)))
+    mixed_fft = np.add(real*ratio1/100, 1j * imag*ratio2/100)
 
     # Perform inverse FFT to get mixed image
     mixed_image = np.real(np.fft.ifft2(mixed_fft))
@@ -262,10 +262,10 @@ def final_im():
         return mix_magnitude_phase(modified_comp2, modified_comp1,ratio_1,ratio_2)
     
     elif(type1 == 'real' and type2 == 'imag'):
-        return mix_real_imag(modified_comp1, modified_comp2,ratio_1,ratio_2)
+        return mix_real_imag(modified_comp1, modified_comp2,ratio_1/100,ratio_2/100)
     
     elif(type1 == 'imag' and type2 == 'real'):
-        return mix_real_imag(modified_comp2, modified_comp1,ratio_1,ratio_2)
+        return mix_real_imag(modified_comp2, modified_comp1,ratio_1/100,ratio_2/100)
         
 
 ##########################################################################################################

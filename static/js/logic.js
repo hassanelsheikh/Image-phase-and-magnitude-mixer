@@ -244,7 +244,7 @@ function on_parameters_change() {
   if (outdiv === 0) {
     outdiv1.setAttribute('src', '');
     outdiv1.setAttribute("src", '/final_image?' + new Date().getTime());
-  } else if (outdiv === "two") {
+  } else if (outdiv === 1) {
     outdiv2.setAttribute('src', '');
     outdiv2.setAttribute("src", '/final_image?' + new Date().getTime());
   }
