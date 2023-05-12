@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 import base64
 import os
-
+import logging
 
 
 def mix_magnitude_phase(modified_comp1, modified_comp2,ratio1, ratio2,c1,c2):
@@ -13,6 +13,7 @@ def mix_magnitude_phase(modified_comp1, modified_comp2,ratio1, ratio2,c1,c2):
     FinalImage = np.real(np.fft.ifft2((OutputImage)))
     FinalImage = (FinalImage - np.min(FinalImage)) / \
         (np.max(FinalImage) - np.min(FinalImage)) * 255
+    logging.info(f'The value of mixed_image is {FinalImage}')
     FinalImage = FinalImage.astype(np.uint8)
     filename = Image.generate_image("hi.png", FinalImage)
     return send_file(filename, mimetype='image/png')
@@ -27,7 +28,7 @@ def mix_real_imag(real, imag, ratio1, ratio2):
 
     # Normalize mixed image values to [0, 255]
     mixed_image = (mixed_image - np.min(mixed_image)) / (np.max(mixed_image) - np.min(mixed_image)) * 255
-
+    logging.info(f'The value of mixed_image is {mixed_image}')
     # Convert mixed image to uint8 data type
     mixed_image = mixed_image.astype(np.uint8)
     filename = Image.generate_image("hi.png", mixed_image)
@@ -191,6 +192,8 @@ def image_mixer():
     global Image2
     Image=processimage()
     Image2=processimage()
+    logging.basicConfig(filename='example.log', level=logging.INFO)
+    logging.info('This message will be logged to example.log')
     return render_template('index.html')
 
 
@@ -199,6 +202,7 @@ def upload():
     data_url1 = request.json['image_data']
     global image1
     image1 = cv2.imdecode(Image.decodefromjs(data_url1), cv2.IMREAD_GRAYSCALE)
+    logging.info(f'The value of iamge 1 is {image1}')
     Image.processimage(image1)
 
     return 'Image saved!'
@@ -236,6 +240,7 @@ def upload2():
     data_url = request.json['image_data']
     global image2
     image2 = cv2.imdecode(Image2.decodefromjs(data_url), cv2.IMREAD_GRAYSCALE)
+    logging.info(f'The value of iamge 2 is {image2}')
     global c2
     c2=Image2.processimage(image2)
     return 'Image saved!'
