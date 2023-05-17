@@ -5,18 +5,20 @@ import base64
 import os
 import logging
 
+def output_img(OutputImage):
+    FinalImage = np.real(np.fft.ifft2((OutputImage)))
+    FinalImage = (FinalImage - np.min(FinalImage)) / \
+        (np.max(FinalImage) - np.min(FinalImage)) * 255
+    FinalImage = FinalImage.astype(np.uint8)
+    filename = Image.generate_image("hi.png", FinalImage)
+    return send_file(filename, mimetype='image/png')
+
 
 def mix_magnitude_phase(modified_comp1, modified_comp2,ratio1, ratio2,c1,c2):
     mag = np.add(modified_comp1*((ratio1/100)),c2*(1-(ratio1/100)))
     phase = np.add(modified_comp2*(ratio2/100),c1*(1-(ratio2/100)))
     OutputImage = np.multiply(mag, np.exp(1j * phase))
-    FinalImage = np.real(np.fft.ifft2((OutputImage)))
-    FinalImage = (FinalImage - np.min(FinalImage)) / \
-        (np.max(FinalImage) - np.min(FinalImage)) * 255
-    logging.info(f'The value of mixed_image is {FinalImage}')
-    FinalImage = FinalImage.astype(np.uint8)
-    filename = Image.generate_image("hi.png", FinalImage)
-    return send_file(filename, mimetype='image/png')
+    return output_img(OutputImage)
 
 
 def mix_real_imag(real, imag, ratio1, ratio2):
@@ -40,24 +42,14 @@ def mix_uniMag_phase(mag, phase, ratio1, ratio2,c1,c2):
     uni_Magnitude = np.add(uni_mag*((ratio1)), c2*(1-(ratio1)))
     phase = np.add(modified_comp2*(ratio2),c1*(1-(ratio2)))
     OutputImage = np.multiply(uni_Magnitude, np.exp(1j * phase))
-    FinalImage = np.real(np.fft.ifft2((OutputImage)))
-    FinalImage = (FinalImage - np.min(FinalImage)) / \
-        (np.max(FinalImage) - np.min(FinalImage)) * 255
-    FinalImage = FinalImage.astype(np.uint8)
-    filename = Image.generate_image("hi.png", FinalImage)
-    return send_file(filename, mimetype='image/png')
+    return output_img(OutputImage)
 
 def mix_mag_uniPhase(mag, phase, ratio1, ratio2, c1, c2):
     uni_phase = np.multiply(phase, 0)
     New_magnitude = np.add(mag*(ratio1/100), c2*(1-ratio_1/100))
     New_phase = np.add(uni_phase*(ratio2/100), c1*(1-ratio2/100))
     OutputImage = np.multiply(New_magnitude, np.exp(1j * New_phase))
-    FinalImage = np.real(np.fft.ifft2((OutputImage)))
-    FinalImage = (FinalImage - np.min(FinalImage)) / \
-        (np.max(FinalImage) - np.min(FinalImage)) * 255
-    FinalImage = FinalImage.astype(np.uint8)
-    filename = Image.generate_image("hi.png", FinalImage)
-    return send_file(filename, mimetype='image/png')
+    return output_img(OutputImage)
 
 def mix_unimag_uniphase(mag, phase, ratio1, ratio2, c1, c2):
      uni_phase = np.multiply(phase, 0)
@@ -65,12 +57,7 @@ def mix_unimag_uniphase(mag, phase, ratio1, ratio2, c1, c2):
      uni_Magnitude = np.add(uni_mag*((ratio1)), c2*(1-(ratio1)))
      New_phase = np.add(uni_phase*(ratio2/100), c1*(1-ratio2/100))
      OutputImage = np.multiply(uni_Magnitude, np.exp(1j * New_phase))
-     FinalImage = np.real(np.fft.ifft2((OutputImage)))
-     FinalImage = (FinalImage - np.min(FinalImage)) / \
-        (np.max(FinalImage) - np.min(FinalImage)) * 255
-     FinalImage = FinalImage.astype(np.uint8)
-     filename = Image.generate_image("hi.png", FinalImage)
-     return send_file(filename, mimetype='image/png') 
+     return output_img(OutputImage)
 
      
 
@@ -353,7 +340,8 @@ def final_im():
     elif(type1 == 'uniphase' and type2 =='unimag'):
         return mix_unimag_uniphase(modified_comp2, modified_comp1, ratio_1, ratio_2, compliment2, compliment)
 
-
+    else:
+        return send_file("error.jpg", mimetype='image/jpg')
     
     
 
