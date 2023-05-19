@@ -1069,3 +1069,1110 @@ INFO:root:The value of iamge 1 is [[175 175 174 ... 157 162 165]
 INFO:werkzeug:127.0.0.1 - - [14/May/2023 13:55:43] "POST /upload HTTP/1.1" 200 -
 INFO:werkzeug: * Detected change in 'C:\\Users\\Bahy Ismail\\AppData\\Roaming\\Python\\Python38\\site-packages\\jinja2\\__init__.py', reloading
 INFO:werkzeug: * Detected change in 'C:\\Users\\Bahy Ismail\\AppData\\Roaming\\Python\\Python38\\site-packages\\jinja2\\environment.py', reloading
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:42:49] "GET / HTTP/1.1" 200 -
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:42:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:42:49] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:42:49] "GET /static/js/logic.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:42:49] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:42:49] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:42:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:42:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:00] "POST /upload HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:04] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:08] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:08] "GET /final_image?1684413788000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:10] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:10] "GET /final_image?1684413790454 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:11] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:11] "GET /final_image?1684413791621 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:12] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:12] "GET /final_image?1684413792301 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:13] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:14] "GET /final_image?1684413793804 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:14] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:15] "GET /final_image?1684413794802 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:16] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:16] "GET /final_image?1684413796476 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:19] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:19] "GET /final_image?1684413799558 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:20] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:21] "GET /final_image?1684413800987 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:22] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:22] "GET /final_image?1684413802078 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:23] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:24] "GET /final_image?1684413803844 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:24] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:24] "GET /final_image?1684413804592 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:25] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:26] "GET /final_image?1684413805867 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:27] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:43:27] "GET /final_image?1684413807537 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:45:30] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:45:30] "GET /final_image?1684413930032 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:45:31] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:45:31] "GET /final_image?1684413931168 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:12] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:12] "GET /final_image?1684413972092 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:14] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:14] "GET /final_image?1684413974150 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:15] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:15] "GET /final_image?1684413975245 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:16] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:16] "GET /final_image?1684413976698 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:20] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:20] "GET /final_image?1684413980311 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:23] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:23] "GET /final_image?1684413983381 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:24] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:25] "GET /final_image?1684413984904 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:26] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:26] "GET /final_image?1684413986494 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:27] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:27] "GET /final_image?1684413987640 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:29] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:29] "GET /final_image?1684413989091 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:35] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:36] "GET /final_image?1684413995963 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:38] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:46:38] "GET /final_image?1684413998162 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:01] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:01] "GET /final_image?1684414021003 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:02] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:02] "GET /final_image?1684414022260 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:02] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:03] "GET /final_image?1684414022965 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:04] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:05] "GET /final_image?1684414024855 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:06] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:06] "GET /final_image?1684414026608 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:19] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:19] "GET /final_image?1684414039263 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:21] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:21] "GET /final_image?1684414041204 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:23] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:23] "GET /final_image?1684414043654 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:26] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:26] "GET /final_image?1684414046350 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:30] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:30] "GET /final_image?1684414050071 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:32] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:32] "GET /final_image?1684414052526 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:33] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:34] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:34] "GET /final_image?1684414053817 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:34] "GET /final_image?1684414054081 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:35] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:35] "GET /final_image?1684414055140 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:35] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:36] "GET /final_image?1684414055867 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:47] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:48] "GET /final_image?1684414067875 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:49] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:49] "GET /final_image?1684414069574 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:50] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:47:51] "GET /final_image?1684414070784 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Bahy Ismail\\AppData\\Roaming\\Python\\Python38\\site-packages\\flask\\app.py', reloading
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:29] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:29] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:35] "POST /upload HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:39] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:42] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:42] "GET /final_image?1684414722057 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:43] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[9.20666013e-14 9.48614027e-14 8.56914539e-14 ... 1.11320336e-13
+  6.95838449e-14 1.05878763e-13]
+ [9.32148517e-14 8.94154243e-14 8.13376765e-14 ... 1.18085659e-13
+  7.47346480e-14 1.08414998e-13]
+ [1.10446505e-13 1.17987598e-13 1.00672838e-13 ... 1.29879054e-13
+  7.64079525e-14 1.14859498e-13]
+ ...
+ [1.03264861e-13 1.05247114e-13 8.90520526e-14 ... 1.20845031e-13
+  7.58525920e-14 1.23511938e-13]
+ [9.07053192e-14 8.62981018e-14 7.66246802e-14 ... 1.10954665e-13
+  5.87629813e-14 1.05423173e-13]
+ [8.25380591e-14 8.21112283e-14 7.32340640e-14 ... 9.58099698e-14
+  4.80847187e-14 9.40325381e-14]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:44] "GET /final_image?1684414723931 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:46] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[7.42160280e-14 8.42788447e-14 5.46573420e-14 ... 7.36951575e-14
+  6.22229855e-14 7.50353973e-14]
+ [7.24020335e-14 7.54704580e-14 4.80419751e-14 ... 7.25924735e-14
+  6.21012876e-14 7.51007848e-14]
+ [8.76358697e-14 9.52552094e-14 6.90413974e-14 ... 7.82980423e-14
+  7.26801167e-14 8.30588082e-14]
+ ...
+ [8.80563599e-14 9.70353814e-14 6.44929710e-14 ... 8.81351348e-14
+  8.40366235e-14 9.00386921e-14]
+ [7.80701924e-14 8.34460525e-14 5.46969509e-14 ... 7.55049315e-14
+  7.15280822e-14 7.93317317e-14]
+ [6.75239747e-14 7.19400209e-14 4.87343390e-14 ... 6.06852597e-14
+  5.15021465e-14 6.46120441e-14]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:46] "GET /final_image?1684414726259 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:47] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[36.42857143 36.42857143 36.42857143 ... 36.42857143 36.42857143
+  36.42857143]
+ [36.42857143 36.42857143 36.42857143 ... 36.42857143 36.42857143
+  36.42857143]
+ [36.42857143 36.42857143 36.42857143 ... 36.42857143 36.42857143
+  36.42857143]
+ ...
+ [36.42857143 36.42857143 36.42857143 ... 36.42857143 36.42857143
+  36.42857143]
+ [36.42857143 36.42857143 36.42857143 ... 36.42857143 36.42857143
+  36.42857143]
+ [36.42857143 36.42857143 36.42857143 ... 36.42857143 36.42857143
+  36.42857143]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:47] "GET /final_image?1684414727484 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:49] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[59.37415882 64.97981157 64.97981157 ... 54.16890983 53.76850606
+  53.76850606]
+ [93.80888291 93.00807537 93.40847914 ... 88.20323015 88.20323015
+  88.20323015]
+ [93.40847914 92.6076716  92.6076716  ... 87.40242261 87.40242261
+  87.40242261]
+ ...
+ [25.74024226 32.14670256 32.14670256 ... 26.14064603 26.5410498
+  26.5410498 ]
+ [25.33983849 31.34589502 31.34589502 ... 25.74024226 26.14064603
+  26.14064603]
+ [24.93943472 30.54508748 30.54508748 ... 24.93943472 25.33983849
+  25.74024226]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:50] "GET /final_image?1684414729932 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:55] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:55] "GET /final_image?1684414735277 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:57] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:57] "GET /final_image?1684414737501 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:58] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:58] "GET /final_image?1684414738547 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:59] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:58:59] "GET /final_image?1684414739437 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:04] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:04] "GET /final_image?1684414744842 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:10] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:10] "GET /final_image?1684414750581 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:12] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:12] "GET /final_image?1684414752668 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:13] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:13] "GET /final_image?1684414753361 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:14] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:14] "GET /final_image?1684414754216 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:16] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:17] "GET /final_image?1684414756809 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:18] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:19] "GET /final_image?1684414758963 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:19] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:19] "GET /final_image?1684414759603 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:20] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:20] "GET /final_image?1684414760222 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:22] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 15:59:22] "GET /final_image?1684414762175 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Bahy Ismail\\AppData\\Roaming\\Python\\Python38\\site-packages\\flask\\templating.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Bahy Ismail\\AppData\\Roaming\\Python\\Python38\\site-packages\\flask\\globals.py', reloading
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:03:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:03:48] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:03:48] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:03:54] "POST /upload HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:03:58] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:04:00] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Bahy Ismail\\AppData\\Roaming\\Python\\Python38\\site-packages\\numpy\\fft\\_pocketfft.py', reloading
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:04:01] "[35m[1mGET /final_image?1684415040795 HTTP/1.1[0m" 500 -
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:04:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:04:19] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:04:19] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:04:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:04:39] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:04:39] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:05:52] "POST /upload HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:05:55] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:05:57] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:05:57] "[35m[1mGET /final_image?1684415157428 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:05:58] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:05:58] "[35m[1mGET /final_image?1684415158738 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:05:59] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:05:59] "[35m[1mGET /final_image?1684415159342 HTTP/1.1[0m" 500 -
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:06:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:06:39] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:06:39] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:06:59] "POST /upload HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:03] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:04] "GET /phase1?1684415224572 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:06] "GET /real2?1684415226348 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:09] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:09] "GET /final_image?1684415229686 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:12] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:12] "[35m[1mGET /final_image?1684415232050 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:15] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:15] "GET /final_image?1684415235246 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:16] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:16] "GET /final_image?1684415236724 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:17] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:17] "GET /final_image?1684415237521 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:18] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:18] "GET /final_image?1684415238011 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:18] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:18] "GET /final_image?1684415238469 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:18] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:19] "GET /final_image?1684415238986 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:19] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:19] "GET /final_image?1684415239275 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:19] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:19] "GET /final_image?1684415239468 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:19] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:19] "GET /final_image?1684415239675 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:19] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:19] "GET /final_image?1684415239856 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:20] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:20] "GET /final_image?1684415240515 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:33] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:33] "[35m[1mGET /final_image?1684415253244 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:46] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:46] "GET /final_image?1684415266877 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:48] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[8.37454293e-14 8.31030195e-14 8.28208394e-14 ... 1.00331511e-13
+  9.08599684e-14 1.07111337e-13]
+ [8.32905331e-14 7.49051706e-14 7.38970568e-14 ... 9.82991175e-14
+  8.79566977e-14 1.02906817e-13]
+ [9.93130619e-14 9.08948768e-14 9.49109125e-14 ... 1.09144873e-13
+  9.27819276e-14 1.17367487e-13]
+ ...
+ [9.71117930e-14 9.73572571e-14 9.09203922e-14 ... 1.11845585e-13
+  1.02581867e-13 1.26734680e-13]
+ [8.54339443e-14 7.96195688e-14 8.00066656e-14 ... 9.64822596e-14
+  9.36134931e-14 1.07862520e-13]
+ [7.57030717e-14 6.82226336e-14 7.69628865e-14 ... 8.20461682e-14
+  7.69691833e-14 9.54591359e-14]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:48] "GET /final_image?1684415268716 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:50] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[7.45051756e-14 9.71185804e-14 6.42482951e-14 ... 8.55861261e-14
+  5.00224040e-14 7.94123890e-14]
+ [7.19158758e-14 8.84480331e-14 5.46236632e-14 ... 8.58824652e-14
+  4.64309766e-14 7.55812232e-14]
+ [8.50825535e-14 1.02660503e-13 6.92531071e-14 ... 9.96381273e-14
+  5.83072143e-14 8.62401680e-14]
+ ...
+ [8.94332983e-14 1.07044000e-13 7.30546530e-14 ... 9.92162442e-14
+  6.13286147e-14 9.67001792e-14]
+ [8.12691038e-14 9.78347354e-14 6.16332174e-14 ... 9.21800018e-14
+  4.87677930e-14 8.67162422e-14]
+ [6.85552878e-14 8.83020718e-14 5.69067276e-14 ... 7.70225664e-14
+  3.70245648e-14 7.31714744e-14]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:50] "GET /final_image?1684415270529 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:51] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[7.35311461e-14 1.02422777e-13 6.67627714e-14 ... 7.43652838e-14
+  3.73689707e-14 1.06579075e-13]
+ [7.57066710e-14 9.83063593e-14 6.01295740e-14 ... 7.68924635e-14
+  3.11468684e-14 1.03045653e-13]
+ [9.14472434e-14 1.16223225e-13 8.12563761e-14 ... 7.91947178e-14
+  3.52281704e-14 1.14067487e-13]
+ ...
+ [8.86899054e-14 1.13997234e-13 8.03423664e-14 ... 8.22066198e-14
+  4.50162126e-14 1.16984892e-13]
+ [7.27296465e-14 9.58771656e-14 6.50216664e-14 ... 6.76286361e-14
+  2.90866916e-14 1.02732603e-13]
+ [6.29280691e-14 8.52856978e-14 5.98366084e-14 ... 5.75153858e-14
+  1.91746595e-14 9.36989452e-14]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:51] "GET /final_image?1684415271497 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:54] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[40.84599477 44.84490335 44.84490335 ... 37.13272252 36.84708619
+  36.84708619]
+ [65.4107189  64.83944625 65.12508257 ... 61.41181032 61.41181032
+  61.41181032]
+ [65.12508257 64.55380992 64.55380992 ... 60.84053767 60.84053767
+  60.84053767]
+ ...
+ [16.8525433  21.42272453 21.42272453 ... 17.13817962 17.42381595
+  17.42381595]
+ [16.56690697 20.85145188 20.85145188 ... 16.8525433  17.13817962
+  17.13817962]
+ [16.28127064 20.28017922 20.28017922 ... 16.28127064 16.56690697
+  16.8525433 ]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:54] "GET /final_image?1684415274563 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:55] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[19.99920386 21.95716788 21.95716788 ... 18.18109442 18.04123985
+  18.04123985]
+ [32.0266971  31.74698795 31.88684252 ... 30.06873308 30.06873308
+  30.06873308]
+ [31.88684252 31.60713338 31.60713338 ... 29.78902394 29.78902394
+  29.78902394]
+ ...
+ [ 8.25141978 10.48909294 10.48909294 ...  8.39127435  8.53112892
+   8.53112892]
+ [ 8.1115652  10.20938379 10.20938379 ...  8.25141978  8.39127435
+   8.39127435]
+ [ 7.97171063  9.92967465  9.92967465 ...  7.97171063  8.1115652
+   8.25141978]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:55] "GET /final_image?1684415275360 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:56] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[33.93314922 37.25527572 37.25527572 ... 30.84831747 30.61102272
+  30.61102272]
+ [54.3404977  53.8659082  54.10320295 ... 51.01837121 51.01837121
+  51.01837121]
+ [54.10320295 53.62861345 53.62861345 ... 50.54378171 50.54378171
+  50.54378171]
+ ...
+ [14.00039024 17.79710623 17.79710623 ... 14.23768499 14.47497974
+  14.47497974]
+ [13.76309549 17.32251674 17.32251674 ... 14.00039024 14.23768499
+  14.23768499]
+ [13.52580074 16.84792724 16.84792724 ... 13.52580074 13.76309549
+  14.00039024]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:56] "GET /final_image?1684415276233 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:57] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[ 81.40630598  88.01504837  88.01504837 ...  75.26961662  74.7975636
+   74.7975636 ]
+ [122.00286636 121.0587603  121.53081333 ... 115.39412397 115.39412397
+  115.39412397]
+ [121.53081333 120.58670727 120.58670727 ... 114.45001791 114.45001791
+  114.45001791]
+ ...
+ [ 41.75385167  49.30670011  49.30670011 ...  42.22590469  42.69795772
+   42.69795772]
+ [ 41.28179864  48.36259405  48.36259405 ...  41.75385167  42.22590469
+   42.22590469]
+ [ 40.80974561  47.418488    47.418488   ...  40.80974561  41.28179864
+   41.75385167]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:07:57] "GET /final_image?1684415277488 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\app.py', reloading
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:40] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:40] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:44] "POST /upload HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:48] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:50] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:50] "GET /final_image?1684415330041 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:52] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:52] "GET /final_image?1684415331983 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:53] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:53] "GET /final_image?1684415333212 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:56] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:56] "GET /final_image?1684415336083 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:57] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:57] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:57] "GET /final_image?1684415337437 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:57] "GET /final_image?1684415337562 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:58] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:59] "GET /final_image?1684415338869 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:59] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:08:59] "GET /final_image?1684415339131 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:01] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:01] "GET /final_image?1684415341596 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:05] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:05] "GET /final_image?1684415345190 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:06] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:06] "GET /final_image?1684415346791 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:08] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:08] "GET /final_image?1684415348599 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:09] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:09] "GET /final_image?1684415349829 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:19] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:19] "GET /final_image?1684415359432 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:20] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:20] "GET /final_image?1684415360558 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:21] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:21] "GET /final_image?1684415361317 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:22] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:22] "GET /final_image?1684415362359 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:26] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:26] "GET /final_image?1684415366574 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:33] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:33] "GET /final_image?1684415373316 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:34] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:35] "GET /final_image?1684415374929 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:36] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:36] "GET /final_image?1684415376780 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:38] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:38] "GET /final_image?1684415378078 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:39] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:39] "GET /final_image?1684415379127 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:39] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:39] "GET /final_image?1684415379773 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:42] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:42] "GET /final_image?1684415382348 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:43] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:43] "GET /final_image?1684415383302 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:44] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:44] "GET /final_image?1684415384424 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:47] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:47] "GET /final_image?1684415387272 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:51] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:51] "GET /final_image?1684415391710 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:52] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:53] "GET /final_image?1684415392928 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:58] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:09:58] "GET /final_image?1684415398259 HTTP/1.1" 200 -
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:04] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:04] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:17] "[35m[1mPOST /mixer HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:17] "GET /final_image?1684415417012 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:19] "[35m[1mPOST /mixer HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:19] "GET /final_image?1684415419545 HTTP/1.1" 200 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:25] "POST /upload HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:29] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:30] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:31] "GET /final_image?1684415430863 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:33] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:33] "GET /final_image?1684415433367 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:36] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:36] "GET /final_image?1684415436352 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:39] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:39] "GET /final_image?1684415439112 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:40] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:41] "GET /final_image?1684415440783 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:45] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:45] "GET /final_image?1684415445071 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:46] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:47] "GET /final_image?1684415446947 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:48] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:48] "GET /final_image?1684415448616 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:49] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:50] "GET /final_image?1684415449810 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:50] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:50] "GET /final_image?1684415450665 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:52] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:52] "GET /final_image?1684415452141 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:53] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:53] "GET /final_image?1684415453412 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:54] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:54] "GET /final_image?1684415454429 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:57] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:57] "GET /final_image?1684415457496 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:58] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:58] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:58] "GET /final_image?1684415458566 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:59] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:59] "GET /final_image?1684415458811 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:10:59] "GET /final_image?1684415459073 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:11:00] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:11:00] "GET /final_image?1684415460048 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\app.py', reloading
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:12:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:12:45] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:12:45] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:12:50] "POST /upload HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:12:53] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:12:58] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:12:58] "GET /final_image?1684415578051 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:12:59] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:00] "GET /final_image?1684415579930 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:04] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:04] "GET /final_image?1684415584017 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:04] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:04] "GET /final_image?1684415584628 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:05] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:05] "GET /final_image?1684415585600 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:07] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:07] "GET /final_image?1684415587061 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:11] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:12] "GET /final_image?1684415591959 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:13] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:13] "GET /final_image?1684415593354 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:14] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:14] "GET /final_image?1684415594093 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:15] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:15] "GET /final_image?1684415595306 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:16] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:17] "GET /final_image?1684415596990 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:20] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:21] "GET /final_image?1684415600926 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:22] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:22] "GET /final_image?1684415602190 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:22] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:23] "GET /final_image?1684415602830 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:23] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:23] "GET /final_image?1684415603662 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:24] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:24] "GET /final_image?1684415604519 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:25] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:25] "GET /final_image?1684415605312 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:26] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:26] "GET /final_image?1684415606027 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:28] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:13:28] "GET /final_image?1684415608296 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Bahy Ismail\\AppData\\Roaming\\Python\\Python38\\site-packages\\flask\\__init__.py', reloading
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:40] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:40] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:46] "POST /upload HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:50] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:53] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:53] "GET /final_image?1684416053755 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:56] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:56] "GET /final_image?1684416056621 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:58] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:59] "GET /final_image?1684416058763 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:59] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:20:59] "GET /final_image?1684416059358 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:21:00] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:21:00] "GET /final_image?1684416060136 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:21:10] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:21:10] "GET /final_image?1684416070456 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:21:12] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:21:12] "GET /final_image?1684416072141 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:21:12] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:21:13] "GET /final_image?1684416072848 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:21:34] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:21:34] "GET /final_image?1684416094393 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:21:36] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:21:36] "GET /final_image?1684416096174 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:05] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:05] "GET /final_image?1684416125278 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:06] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:07] "GET /final_image?1684416126763 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:07] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:07] "GET /final_image?1684416127445 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:08] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:08] "GET /final_image?1684416128204 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:08] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:08] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:09] "GET /final_image?1684416128798 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:09] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:09] "GET /final_image?1684416128940 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:09] "GET /final_image?1684416129093 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:15] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:15] "GET /final_image?1684416135501 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:17] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:17] "GET /final_image?1684416137635 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:21] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:21] "GET /final_image?1684416141182 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:22] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:22] "GET /final_image?1684416142255 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:23] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:23] "GET /final_image?1684416143651 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:26] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:26] "GET /final_image?1684416146280 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:27] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:27] "GET /final_image?1684416147080 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:27] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:28] "GET /final_image?1684416147756 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:28] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:28] "GET /final_image?1684416148276 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:29] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:30] "GET /final_image?1684416149875 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:39] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:39] "GET /final_image?1684416159563 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:41] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:22:41] "GET /final_image?1684416161149 HTTP/1.1" 200 -
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:23:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:23:10] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:23:10] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:24:07] "POST /upload HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:24:12] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:24:17] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:24:17] "GET /final_image?1684416257539 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:24:23] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:24:23] "GET /final_image?1684416263451 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:24:27] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:24:27] "GET /final_image?1684416267147 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:24:28] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:24:28] "GET /final_image?1684416268513 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:34] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:34] "GET /final_image?1684416574650 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:40] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:40] "GET /final_image?1684416580039 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:41] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:41] "GET /final_image?1684416581069 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:47] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:47] "GET /final_image?1684416587457 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:49] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:49] "GET /final_image?1684416589648 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:52] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:52] "GET /final_image?1684416592099 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:53] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:53] "GET /final_image?1684416593187 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:56] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:56] "GET /final_image?1684416596097 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:57] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:57] "GET /final_image?1684416597357 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:57] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:29:58] "GET /final_image?1684416597917 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:01] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:02] "GET /final_image?1684416601822 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:03] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:04] "GET /final_image?1684416603836 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:05] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:05] "GET /final_image?1684416605585 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:10] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:10] "GET /final_image?1684416610234 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:12] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:12] "GET /final_image?1684416612149 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:13] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:13] "GET /final_image?1684416613040 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:16] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:16] "GET /final_image?1684416616707 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:19] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:19] "GET /final_image?1684416619012 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:33] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:33] "GET /final_image?1684416633709 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:36] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:37] "GET /final_image?1684416636929 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:39] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:39] "GET /final_image?1684416639270 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:40] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:40] "GET /final_image?1684416640510 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:41] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:41] "GET /final_image?1684416641353 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:44] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:44] "GET /final_image?1684416644287 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:46] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:46] "GET /final_image?1684416645996 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:48] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:48] "GET /final_image?1684416648017 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:50] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:50] "GET /final_image?1684416650025 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:52] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:52] "GET /final_image?1684416652693 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:54] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:54] "GET /final_image?1684416654474 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:56] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:56] "GET /final_image?1684416656136 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:57] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:30:57] "GET /final_image?1684416657159 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:00] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:00] "GET /final_image?1684416660664 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:02] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:02] "GET /final_image?1684416662480 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:06] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:06] "GET /final_image?1684416666132 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:06] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:07] "GET /final_image?1684416666943 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:07] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:07] "GET /final_image?1684416667563 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:09] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:09] "GET /final_image?1684416669129 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:10] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:10] "GET /final_image?1684416670312 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:11] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:11] "GET /final_image?1684416671468 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:12] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:31:12] "GET /final_image?1684416672105 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\app.py', reloading
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:00] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:00] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:05] "POST /upload HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:09] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:11] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:11] "GET /final_image?1684417091721 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:15] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:15] "GET /final_image?1684417095209 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:18] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:18] "GET /final_image?1684417098660 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:19] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:19] "GET /final_image?1684417099456 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:22] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:22] "GET /final_image?1684417102710 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:25] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:25] "GET /final_image?1684417105140 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:28] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[128.06  127.99  127.99  ... 127.995 127.99  127.99 ]
+ [127.63  127.64  127.635 ... 127.56  127.56  127.56 ]
+ [127.635 127.645 127.645 ... 127.56  127.56  127.56 ]
+ ...
+ [127.64  127.56  127.56  ... 127.645 127.65  127.65 ]
+ [127.635 127.56  127.56  ... 127.64  127.645 127.645]
+ [127.63  127.56  127.56  ... 127.63  127.635 127.64 ]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:28] "GET /final_image?1684417108335 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:31] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[129.25     129.03125  129.03125  ... 129.046875 129.03125  129.03125 ]
+ [127.90625  127.9375   127.921875 ... 127.6875   127.6875   127.6875  ]
+ [127.921875 127.953125 127.953125 ... 127.6875   127.6875   127.6875  ]
+ ...
+ [127.9375   127.6875   127.6875   ... 127.953125 127.96875  127.96875 ]
+ [127.921875 127.6875   127.6875   ... 127.9375   127.953125 127.953125]
+ [127.90625  127.6875   127.6875   ... 127.90625  127.921875 127.9375  ]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:32] "GET /final_image?1684417111865 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:32] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[128.10215054 128.02688172 128.02688172 ... 128.03225806 128.02688172
+  128.02688172]
+ [127.63978495 127.65053763 127.64516129 ... 127.56451613 127.56451613
+  127.56451613]
+ [127.64516129 127.65591398 127.65591398 ... 127.56451613 127.56451613
+  127.56451613]
+ ...
+ [127.65053763 127.56451613 127.56451613 ... 127.65591398 127.66129032
+  127.66129032]
+ [127.64516129 127.56451613 127.56451613 ... 127.65053763 127.65591398
+  127.65591398]
+ [127.63978495 127.56451613 127.56451613 ... 127.63978495 127.64516129
+  127.65053763]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:32] "GET /final_image?1684417112742 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:34] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[168.61608597 164.93487463 164.93487463 ... 165.1978183  164.93487463
+  164.93487463]
+ [146.00293064 146.52881797 146.26587431 ... 142.32171931 142.32171931
+  142.32171931]
+ [146.26587431 146.79176164 146.79176164 ... 142.32171931 142.32171931
+  142.32171931]
+ ...
+ [146.52881797 142.32171931 142.32171931 ... 146.79176164 147.05470531
+  147.05470531]
+ [146.26587431 142.32171931 142.32171931 ... 146.52881797 146.79176164
+  146.79176164]
+ [146.00293064 142.32171931 142.32171931 ... 146.00293064 146.26587431
+  146.52881797]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:34] "GET /final_image?1684417114268 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:35] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[179.46929337 174.97703948 174.97703948 ... 175.29791476 174.97703948
+  174.97703948]
+ [151.87401948 152.51577004 152.19489476 ... 147.38176559 147.38176559
+  147.38176559]
+ [152.19489476 152.83664531 152.83664531 ... 147.38176559 147.38176559
+  147.38176559]
+ ...
+ [152.51577004 147.38176559 147.38176559 ... 152.83664531 153.15752059
+  153.15752059]
+ [152.19489476 147.38176559 147.38176559 ... 152.51577004 152.83664531
+  152.83664531]
+ [151.87401948 147.38176559 147.38176559 ... 151.87401948 152.19489476
+  152.51577004]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:35] "GET /final_image?1684417115089 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:36] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[185.56155034 180.75299655 180.75299655 ... 181.09646468 180.75299655
+  180.75299655]
+ [156.02329136 156.71022762 156.36675949 ... 151.21473757 151.21473757
+  151.21473757]
+ [156.36675949 157.05369574 157.05369574 ... 151.21473757 151.21473757
+  151.21473757]
+ ...
+ [156.71022762 151.21473757 151.21473757 ... 157.05369574 157.39716387
+  157.39716387]
+ [156.36675949 151.21473757 151.21473757 ... 156.71022762 157.05369574
+  157.05369574]
+ [156.02329136 151.21473757 151.21473757 ... 156.02329136 156.36675949
+  156.71022762]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:37] "GET /final_image?1684417116912 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:37] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[185.56155034 180.75299655 180.75299655 ... 181.09646468 180.75299655
+  180.75299655]
+ [156.02329136 156.71022762 156.36675949 ... 151.21473757 151.21473757
+  151.21473757]
+ [156.36675949 157.05369574 157.05369574 ... 151.21473757 151.21473757
+  151.21473757]
+ ...
+ [156.71022762 151.21473757 151.21473757 ... 157.05369574 157.39716387
+  157.39716387]
+ [156.36675949 151.21473757 151.21473757 ... 156.71022762 157.05369574
+  157.05369574]
+ [156.02329136 151.21473757 151.21473757 ... 156.02329136 156.36675949
+  156.71022762]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:37] "GET /final_image?1684417117612 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:39] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[203.24441721 197.51779824 197.51779824 ... 197.92684246 197.51779824
+  197.51779824]
+ [168.066615   168.88470342 168.47565921 ... 162.33999603 162.33999603
+  162.33999603]
+ [168.47565921 169.29374763 169.29374763 ... 162.33999603 162.33999603
+  162.33999603]
+ ...
+ [168.88470342 162.33999603 162.33999603 ... 169.29374763 169.70279185
+  169.70279185]
+ [168.47565921 162.33999603 162.33999603 ... 168.88470342 169.29374763
+  169.29374763]
+ [168.066615   162.33999603 162.33999603 ... 168.066615   168.47565921
+  168.88470342]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:39] "GET /final_image?1684417119167 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:40] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[217.35850209 210.89203216 210.89203216 ... 211.35392287 210.89203216
+  210.89203216]
+ [177.63590109 178.55968251 178.0977918  ... 171.16943116 171.16943116
+  171.16943116]
+ [178.0977918  179.02157322 179.02157322 ... 171.16943116 171.16943116
+  171.16943116]
+ ...
+ [178.55968251 171.16943116 171.16943116 ... 179.02157322 179.48346393
+  179.48346393]
+ [178.0977918  171.16943116 171.16943116 ... 178.55968251 179.02157322
+  179.02157322]
+ [177.63590109 171.16943116 171.16943116 ... 177.63590109 178.0977918
+  178.55968251]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:38:40] "GET /final_image?1684417120070 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\app.py', reloading
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:42:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:42:52] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:42:52] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\app.py', reloading
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:20] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:20] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:24] "POST /upload HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:26] "GET /magnitude1?1684417766052 HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:31] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:32] "GET /magnitude2?1684417772270 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:35] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:35] "GET /final_image?1684417775234 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:36] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:36] "GET /final_image?1684417776638 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:39] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:39] "GET /final_image?1684417779648 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:41] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:41] "GET /final_image?1684417781003 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:42] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:42] "GET /final_image?1684417782294 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:44] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:49:44] "GET /final_image?1684417784004 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:08] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:08] "GET /final_image?1684417808070 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:11] "POST /mixer HTTP/1.1" 200 -
+INFO:root:The value of mixed_image is [[126.41939462 134.42387892 134.42387892 ... 118.98665919 118.41491031
+  118.41491031]
+ [175.58979821 174.44630045 175.01804933 ... 167.5853139  167.5853139
+  167.5853139 ]
+ [175.01804933 173.87455157 173.87455157 ... 166.44181614 166.44181614
+  166.44181614]
+ ...
+ [ 78.39248879  87.54047085  87.54047085 ...  78.96423767  79.53598655
+   79.53598655]
+ [ 77.82073991  86.39697309  86.39697309 ...  78.39248879  78.96423767
+   78.96423767]
+ [ 77.24899103  85.25347534  85.25347534 ...  77.24899103  77.82073991
+   78.39248879]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:11] "GET /final_image?1684417811758 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:15] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:15] "GET /final_image?1684417815698 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:18] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:18] "GET /final_image?1684417818490 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:20] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:20] "GET /final_image?1684417820290 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:21] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:21] "GET /final_image?1684417821427 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:23] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:23] "GET /final_image?1684417823155 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:24] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:24] "GET /final_image?1684417824400 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:26] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:26] "GET /final_image?1684417826192 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:26] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:27] "GET /final_image?1684417826823 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:30] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:30] "GET /final_image?1684417830548 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:33] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:33] "GET /final_image?1684417833276 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:35] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:35] "GET /final_image?1684417835183 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:35] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:35] "GET /final_image?1684417835710 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:36] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:50:37] "GET /final_image?1684417836873 HTTP/1.1" 200 -
+INFO:root:This message will be logged to example.log
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:59:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:59:45] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:59:45] "[36mGET /static/js/logic.js HTTP/1.1[0m" 304 -
+INFO:root:The value of iamge 1 is [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:59:50] "POST /upload HTTP/1.1" 200 -
+INFO:root:The value of iamge 2 is [[232 232 232 ... 219 218 218]
+ [232 232 232 ... 218 218 218]
+ [232 232 232 ... 217 217 217]
+ ...
+ [148 148 148 ... 149 150 150]
+ [147 147 147 ... 148 149 149]
+ [146 146 146 ... 146 147 148]]
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:59:54] "POST /upload2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:59:58] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 16:59:58] "GET /final_image?1684418398600 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 17:00:01] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 17:00:01] "GET /final_image?1684418401362 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 17:00:04] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 17:00:04] "GET /final_image?1684418404234 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 17:00:05] "POST /mixer HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 17:00:05] "GET /final_image?1684418405266 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\test.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\test.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\Bahy Ismail\\OneDrive\\Desktop\\task_4\\test.py', reloading

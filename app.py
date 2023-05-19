@@ -15,10 +15,7 @@ def output_img(OutputImage):
 
 
 def mix_magnitude_phase(modified_comp1, modified_comp2,ratio1, ratio2,c1,c2):
-    mag = np.add(modified_comp1*((ratio1/100)),c2*(1-(ratio1/100)))
-    phase = np.add(modified_comp2*(ratio2/100),c1*(1-(ratio2/100)))
-    OutputImage = np.multiply(mag, np.exp(1j * phase))
-    return output_img(OutputImage)
+    return output_img(renew(modified_comp1, modified_comp2,ratio1, ratio2,c1,c2))
 
 
 def mix_real_imag(real, imag, ratio1, ratio2):
@@ -39,27 +36,23 @@ def mix_real_imag(real, imag, ratio1, ratio2):
 
 def mix_uniMag_phase(mag, phase, ratio1, ratio2,c1,c2):
     uni_mag  = mag/mag
-    uni_Magnitude = np.add(uni_mag*((ratio1)), c2*(1-(ratio1)))
-    phase = np.add(modified_comp2*(ratio2),c1*(1-(ratio2)))
-    OutputImage = np.multiply(uni_Magnitude, np.exp(1j * phase))
-    return output_img(OutputImage)
+    return output_img(renew(uni_mag,phase,ratio1, ratio2, c1, c2))
 
 def mix_mag_uniPhase(mag, phase, ratio1, ratio2, c1, c2):
     uni_phase = np.multiply(phase, 0)
-    New_magnitude = np.add(mag*(ratio1/100), c2*(1-ratio_1/100))
-    New_phase = np.add(uni_phase*(ratio2/100), c1*(1-ratio2/100))
-    OutputImage = np.multiply(New_magnitude, np.exp(1j * New_phase))
-    return output_img(OutputImage)
+    return output_img(renew(mag,uni_phase,ratio1, ratio2, c1, c2))
 
 def mix_unimag_uniphase(mag, phase, ratio1, ratio2, c1, c2):
      uni_phase = np.multiply(phase, 0)
      uni_mag  = mag/mag
-     uni_Magnitude = np.add(uni_mag*((ratio1)), c2*(1-(ratio1)))
-     New_phase = np.add(uni_phase*(ratio2/100), c1*(1-ratio2/100))
-     OutputImage = np.multiply(uni_Magnitude, np.exp(1j * New_phase))
-     return output_img(OutputImage)
-
-     
+     return output_img(renew(uni_mag,uni_phase,ratio1, ratio2, c1, c2))   
+ 
+def renew(mag, phase, ratio1, ratio2, c1, c2):
+    uni_Magnitude = np.add(mag*((ratio1)), c2*(1-(ratio1)))
+    New_phase = np.add(phase*(ratio2/100), c1*(1-ratio2/100))
+    OutputImage = np.multiply(uni_Magnitude, np.exp(1j * New_phase))
+    return OutputImage
+    
 
 
 
@@ -168,7 +161,54 @@ class processimage:
         file_path = name
         if os.path.exists(file_path):
             os.remove(name)
+
+    def output_img(self,OutputImage):
+        FinalImage = np.real(np.fft.ifft2((OutputImage)))
+        FinalImage = (FinalImage - np.min(FinalImage)) / \
+            (np.max(FinalImage) - np.min(FinalImage)) * 255
+        FinalImage = FinalImage.astype(np.uint8)
+        filename = Image.generate_image("hi.png", FinalImage)
+        return send_file(filename, mimetype='image/png')
+
+
+    def mix_magnitude_phase(self,modified_comp1, modified_comp2,ratio1, ratio2,c1,c2):
+        return self.output_img(self.renew(modified_comp1, modified_comp2,ratio1, ratio2,c1,c2))
+
+
+    def mix_real_imag(self,real, imag, ratio1, ratio2):
+        # Mix magnitude and imaginary components
+        mixed_fft = np.add(real*ratio1/100, 1j * imag*ratio2/100)
+
+        # Perform inverse FFT to get mixed image
+        mixed_image = np.real(np.fft.ifft2(mixed_fft))
+
+        # Normalize mixed image values to [0, 255]
+        mixed_image = (mixed_image - np.min(mixed_image)) / (np.max(mixed_image) - np.min(mixed_image)) * 255
+        logging.info(f'The value of mixed_image is {mixed_image}')
+        # Convert mixed image to uint8 data type
+        mixed_image = mixed_image.astype(np.uint8)
+        filename = Image.generate_image("hi.png", mixed_image)
+        return send_file(filename, mimetype='image/png')
+
+
+    def mix_uniMag_phase(self,mag, phase, ratio1, ratio2,c1,c2):
+        uni_mag  = mag/mag
+        return self.output_img(self.renew(uni_mag,phase,ratio1, ratio2, c1, c2))
+
+    def mix_mag_uniPhase(self,mag, phase, ratio1, ratio2, c1, c2):
+        uni_phase = np.multiply(phase, 0)
+        return self.output_img(self.renew(mag,uni_phase,ratio1, ratio2, c1, c2))
+
+    def mix_unimag_uniphase(self,mag, phase, ratio1, ratio2, c1, c2):
+        uni_phase = np.multiply(phase, 0)
+        uni_mag  = mag/mag
+        return self.output_img(self.renew(uni_mag,uni_phase,ratio1, ratio2, c1, c2))   
     
+    def renew(self,mag, phase, ratio1, ratio2, c1, c2):
+        uni_Magnitude = np.add(mag*((ratio1)), c2*(1-(ratio1)))
+        New_phase = np.add(phase*(ratio2/100), c1*(1-ratio2/100))
+        OutputImage = np.multiply(uni_Magnitude, np.exp(1j * New_phase))
+        return OutputImage    
 
 ###################################################################################################################################################################################
  ###################################################################################################################################################################################
@@ -311,46 +351,39 @@ def final_im():
     
 
     if(type1 == 'magnitude' and type2 == 'phase'):  
-        return mix_magnitude_phase(modified_comp1, modified_comp2,ratio_1,ratio_2,compliment,compliment2)
+        return Image.mix_magnitude_phase(modified_comp1, modified_comp2,ratio_1,ratio_2,compliment,compliment2)
     
     elif(type1 == 'phase' and type2 == 'magnitude'):
-        return mix_magnitude_phase(modified_comp2, modified_comp1,ratio_1,ratio_2,compliment2,compliment)
+        return Image.mix_magnitude_phase(modified_comp2, modified_comp1,ratio_1,ratio_2,compliment2,compliment)
     
     elif(type1 == 'real' and type2 == 'imag'):
-        return mix_real_imag(modified_comp1, modified_comp2,ratio_1/100,ratio_2/100)
+        return Image.mix_real_imag(modified_comp1, modified_comp2,ratio_1/100,ratio_2/100)
     
     elif(type1 == 'imag' and type2 == 'real'):
-        return mix_real_imag(modified_comp2, modified_comp1,ratio_1/100,ratio_2/100)
+        return Image.mix_real_imag(modified_comp2, modified_comp1,ratio_1/100,ratio_2/100)
     
     elif(type1 == 'unimag' and type2 == 'phase'):
-        return mix_uniMag_phase(modified_comp1, modified_comp2, ratio_1, ratio_2, compliment, compliment2)
+        return Image.mix_uniMag_phase(modified_comp1, modified_comp2, ratio_1, ratio_2, compliment, compliment2)
     
     elif(type1 == 'phase' and type2 == 'unimag'):
-        return mix_uniMag_phase(modified_comp2, modified_comp1, ratio_1, ratio_2, compliment2, compliment)
+        return Image.mix_uniMag_phase(modified_comp2, modified_comp1, ratio_1, ratio_2, compliment2, compliment)
     
     elif(type1 == 'magnitude' and type2 == 'uniphase'):
-        return mix_mag_uniPhase(modified_comp1, modified_comp2, ratio_1, ratio_2, compliment, compliment2)
+        return Image.mix_mag_uniPhase(modified_comp1, modified_comp2, ratio_1, ratio_2, compliment, compliment2)
     
     elif(type1 == 'uniphase' and type2 == 'magnitude'):
-        return mix_mag_uniPhase(modified_comp2, modified_comp1, ratio_1, ratio_2, compliment2, compliment)
+        return Image.mix_mag_uniPhase(modified_comp2, modified_comp1, ratio_1, ratio_2, compliment2, compliment)
     
     elif(type1 == 'unimag' and type2 == 'uniphase'):
-        return mix_unimag_uniphase(modified_comp1, modified_comp2, ratio_1, ratio_2, compliment, compliment2)
+        return Image.mix_unimag_uniphase(modified_comp1, modified_comp2, ratio_1, ratio_2, compliment, compliment2)
     
     elif(type1 == 'uniphase' and type2 =='unimag'):
-        return mix_unimag_uniphase(modified_comp2, modified_comp1, ratio_1, ratio_2, compliment2, compliment)
+        return Image.mix_unimag_uniphase(modified_comp2, modified_comp1, ratio_1, ratio_2, compliment2, compliment)
 
     else:
         return send_file("error.jpg", mimetype='image/jpg')
     
     
-
-    
-
-        
-            
-
-##########################################################################################################
 
 
 if __name__ == '__main__':
